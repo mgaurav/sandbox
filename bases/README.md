@@ -1,10 +1,15 @@
 # Horner method
 
 * A number `n` in base `b` can be represented as:
-    $$    n = n_kn_{k-1}...n_2n_1n_0$$
-    $$      = b^0*n_0 + b^1*n_1 + b^2*n_2 + ... + b^{k-1}*n_{k-1} + b^k*n_k$$
-    $$      = n_0 + b*(n_1 + b*(n_2 + ... + b*(n_{k-1} + b*n_k) )$$
-    $$      = (n_0n_1...n_{r-1}) + b^r((n_rn_{r+1}...n_{2r-1}) + ... + b^r(n_{k-r+1}...n_k) )$$
+
+    `n = n_kn_{k-1}...n_2n_1n_0`
+    
+    `n = b^0*n_0 + b^1*n_1 + b^2*n_2 + ... + b^{k-1}*n_{k-1} + b^k*n_k`
+    
+    `n = n_0 + b*(n_1 + b*(n_2 + ... + b*(n_{k-1} + b*n_k) )`
+    
+    `n = (n_0n_1...n_{r-1}) + b^r((n_rn_{r+1}...n_{2r-1}) + ... + b^r(n_{k-r+1}...n_k) )`
+    
 * Number of base `b` digits in number `n` is `ceil`($log_2n / log_2b$).
 * Optimized method uses last formula to do the base conversion.
 
