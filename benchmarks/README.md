@@ -1,0 +1,65 @@
+# String operations
+
+    ----------------------------------------------------------------
+    Benchmark                         Time           CPU Iterations
+    ----------------------------------------------------------------
+    BM_stringAppend/1/1               4 ns          4 ns  194595717
+    BM_stringAppend/8/1              25 ns         25 ns   26999671
+    BM_stringAppend/64/1            208 ns        208 ns    3109441
+    BM_stringAppend/512/1          1567 ns       1567 ns     450435
+    BM_stringAppend/1000/1         3068 ns       3068 ns     230076
+    BM_stringAppend/1/8              10 ns         10 ns   74160065
+    BM_stringAppend/8/8              89 ns         89 ns    8048143
+    BM_stringAppend/64/8            641 ns        641 ns    1274564
+    BM_stringAppend/512/8          5187 ns       5187 ns     152141
+    BM_stringAppend/1000/8        10379 ns      10379 ns      73686
+    BM_stringAppend/1/64             56 ns         56 ns   10000000
+    BM_stringAppend/8/64            331 ns        331 ns    2080610
+    BM_stringAppend/64/64          2793 ns       2792 ns     231031
+    BM_stringAppend/512/64        24450 ns      24450 ns      24827
+    BM_stringAppend/1000/64       55961 ns      55960 ns      10000
+    BM_stringAppend/1/100            74 ns         74 ns   12434612
+    BM_stringAppend/8/100           507 ns        507 ns    1000000
+    BM_stringAppend/64/100         5636 ns       5636 ns     150785
+    BM_stringAppend/512/100       31441 ns      31440 ns      16282
+    BM_stringAppend/1000/100      70051 ns      70051 ns      13549
+    BM_stringStream/1/1            9765 ns       9765 ns     711289
+    BM_stringStream/8/1           11209 ns      11209 ns     100000
+    BM_stringStream/64/1          85395 ns      85394 ns      75444
+    BM_stringStream/512/1         98087 ns      98086 ns      10000
+    BM_stringStream/1000/1       237929 ns     237926 ns      10000
+    BM_stringStream/1/8           11123 ns      11123 ns     100000
+    BM_stringStream/8/8           93715 ns      93715 ns      80312
+    BM_stringStream/64/8          93753 ns      93753 ns      10000
+    BM_stringStream/512/8       1147670 ns    1147652 ns       9581
+    BM_stringStream/1000/8       834044 ns     834031 ns       3665
+    BM_stringStream/1/64          94248 ns      94247 ns      80641
+    BM_stringStream/8/64          93227 ns      93226 ns      10000
+    BM_stringStream/64/64       1228157 ns    1228137 ns      10180
+    BM_stringStream/512/64       954774 ns     954734 ns       1000
+    BM_stringStream/1000/64     5089992 ns    5089916 ns       1000
+    BM_stringStream/1/100         87565 ns      87562 ns      49346
+    BM_stringStream/8/100        178635 ns     178633 ns      10000
+    BM_stringStream/64/100       915904 ns     915891 ns       5034
+    BM_stringStream/512/100     1576088 ns    1576064 ns       1000
+    BM_stringStream/1000/100   14113398 ns   14111416 ns       1000
+    BM_stringConcat/1/1            8553 ns       8553 ns     319284
+    BM_stringConcat/8/1           91404 ns      91403 ns      51857
+    BM_stringConcat/64/1         958680 ns     958666 ns       8360
+    BM_stringConcat/512/1       9595073 ns    9594946 ns       1298
+    BM_stringConcat/1000/1      8610956 ns    8610791 ns        321
+    BM_stringConcat/1/8           22772 ns      22772 ns     100000
+    BM_stringConcat/8/8          145144 ns     145143 ns      10000
+    BM_stringConcat/64/8         926412 ns     926399 ns       1000
+    BM_stringConcat/512/8       5887722 ns    5887664 ns        100
+    BM_stringConcat/1000/8     22775635 ns   22775382 ns        100
+    BM_stringConcat/1/64          82908 ns      82907 ns      38007
+    BM_stringConcat/8/64         963561 ns     963544 ns       5959
+    BM_stringConcat/64/64      11496553 ns   11496314 ns        937
+    BM_stringConcat/512/64     69905154 ns   69904263 ns        100
+    BM_stringConcat/1000/64    82730483 ns   82728755 ns         38
+    BM_stringConcat/1/100         83225 ns      83224 ns      24062
+    BM_stringConcat/8/100        978429 ns     978418 ns       3775
+    BM_stringConcat/64/100     11579415 ns   11579221 ns        587
+    BM_stringConcat/512/100   135013734 ns  135011889 ns         92
+    BM_stringConcat/1000/100   82890052 ns   82888913 ns         24
