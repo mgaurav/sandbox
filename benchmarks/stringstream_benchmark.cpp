@@ -1,6 +1,7 @@
-#include <benchmark/benchmark.h>
-#include <sstream>
-#include <string>
+#include <sstream>    // std::ostringstream
+#include <string>     // std::string
+
+#include <benchmark/benchmark.h>  // BENCHMARK
 
 namespace {
 
